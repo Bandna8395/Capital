@@ -28,6 +28,16 @@ p{
 
 
 /* NAVBAR */
+.navbar-brand{
+  font-size: 17px !important;
+  float:left !important;
+  text-align: left !important;
+}
+.navbar-brand:hover{
+  text-decoration: none !important;
+}
+
+
 #navbar{
   text-transform:uppercase;
 }
@@ -54,18 +64,34 @@ p{
   color:white;
 }
 .nav-btn{
-  background:#4F75FF;
-  color:white !important;
-  text-transform: none;
- padding:5px 12px 5px 12px;
- display: inline-block;
- margin-top:10px;
+  background: #4F75FF;
+color: white !important;
+text-transform: none;
+padding: 6px 12px 6px 12px;
+display: inline-block;
+margin-top: 0px;
 
 }
 .nav-btn:hover{
   transform: scale(1.05);
 }
+#navmenu {
+  background: white;
+}
+.nav-link{
+  transition:none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 
+
+#cloud {
+  margin-top: 75px;
+}
 #cloud img {
   width: 100%;
   height: 380px;
@@ -589,7 +615,7 @@ padding-right: 26px !important;
 }
 #main-footer form a{
 float: right;
-padding-right: 34px;
+padding-right: 36px;
 }
 #main-footer form a:after{
   float: right;
@@ -3954,52 +3980,645 @@ font-size: 12px;
 
 }
 
-@media screen and (max-width: 360px) {
+
+.fixed-top {
+   background: white;
+}
+
+
+
+
+@media screen and (max-width:375px){
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl{
+    padding-right: 10px !important;
+  }
+  #navbar li {
+    display: inline;
+    padding-right: 3px;
+  }
+  .nav-btn {
+    background: #4F75FF;
+    color: white !important;
+    text-transform: none;
+    padding: 2px 0px 5px 0px;
+    display: inline-block;
+    margin-top: 0px;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100% !important;
+padding-left: 11px !important;
+padding-right: 35px !important;
+padding-top: 0px !important;
+  }
+  #navbar {
+    background: white !important;
+    padding-top: 5px !important;
+  }
+
   #navbar ul {
     padding-left: 0;
   }
    #navbar a {
     font-size: 11px;
+  }
+  .row.center-xs.center-sm.center-md.center-lg{
+    display: flex;
+    flex-direction: column-reverse;
+  } 
+  #cloud {
+    margin-top: 30px;
+  }
+  #cloud img {
+    width: 94%;
+    height: 75%;
+  }
+  #cloud .col-xs-12.col-sm-12.col-md-4.col-lg-5 {
+    float: left !important;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #cloud .col-xs-12.col-sm-12.col-md-5.col-lg-5 {
+    flex: 8px;
+    width: 100%;
+    float: right !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+  
+  #cloud h4 {
+    text-align: left !important;
+    width: 100% !important;
+    font-size: 17px !important;
+    margin-top: 0px !important;
+  }
+  #cloud h1 {
+    font-size: 19px !important;
+    line-height: 25px !important;
+    width: 75% !important;
+    text-align: left !important;
+    margin-left: 0;
+    margin-top: 5px !important;
+    font-weight: 700 !important;
+  }
+  #cloud p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left !important;
+    text-align: left;
+    margin-left: 0;
+    padding: 0 0 0 0px;
+  }
+  #cloud input {
+    padding: 10px 0 10px 5px !important;
+    width: 100% !important;
+    font-size: 12px !important;
+    margin-left: 0px;
+    border-right: none !important;
+    border: 1px solid rgb(79, 117, 255) !important;
+  }
+  .cld-btn {
+    padding: 11px 10px 10px 10px !important;
+font-size: 12px !important;
+position: absolute;
+float: right;
+margin-top: 75px !important;
+margin-left: -58px !important;
+  }
+  #Services {
+    margin-bottom: 0px !important;
+    margin-top: 40px !important;
+  }
+  #Services h1 {
+    font-size: 20px !important;
+    line-height: 0px;
+    text-align: left;
+  }
+
+  #Services #fa-icon-left{
+    display: inline-flex !important;
+margin-left: 305px !important;
+font-weight: 100;
+width: 3% !important;
+margin-top: -50px !important;
+position: absolute !important;
+font-size: 17px;
+  }
+  
+  #Services .fa .next, .fa .prev :hover {
+    transform: scale(1.09) !important;
+  }
+#Services #fa-icon-right{
+  display: inline-flex;
+margin-left: 325px !important;
+font-weight: 100;
+width: 2%;
+margin-top: -50px !important;
+position: absolute;
+font-size: 17px;
+}
+ #Services .mySlides {
+  margin-left: 3px;
+  height: 370px;
+  text-align: left !important;
+  width: 80%;
+  box-shadow: 0 10px 10px -5px gray;
+  padding-bottom: 0px !important;
+  margin-bottom: 50px;
+} 
+#Services .w3-image {
+  margin-top: 0px !important;
+  height: 65% !important;
+  width: 80% !important;
+  margin-left: 0px;
+  position: absolute;
+}
+
+  #Services .mySlides h6 {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    margin-top: 250px !important;
+    width: 100% !important;
+    position: absolute !important;
+    margin-left: 10px !important;
+    margin-right: 29px !important;
+  }
+  #Services .mySlides p{
+    margin-top: 270px !important;
+font-size: 11px !important;
+position: absolute;
+margin-left: 10px !important;
+width: 55% !important;
+white-space: pre-line;
+  }
+  #Services .read-more {
+    background: #4F75FF;
+    border: none;
+    color: white;
+    font-size: 9px;
+    text-decoration: none;
+    margin-right: 0;
+    margin-top: 315px;
+    position: absolute;
+    padding: 8px;
+    width: 17% !important;
+    margin-left: 10px;
+  }
+  .arrows{
+    display: block !important;
+  }
+  .slideshow-container {
+    position: relative;
+    display: block !important;
+  
+  }
+.mySlides {
+    display: none;
+    padding: 0px;
+    text-align: left;
+  }
+  
+  /* Next & previous buttons */
+  .fa .prev, .fa .next {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+   .carousel__item--mobile-in-1 {
+   display: none !important;
+  }
+ 
+  #Blog .col-xs-6.col-sm-5.col-md-6.col-lg-6 {
+    display: none !important;
+  }
+  #Blog h1 {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold !important;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  #Blog #fa-icon-left{
+    display: inline-flex !important;
+margin-left: 305px !important;
+font-weight: 100;
+width: 3% !important;
+margin-top: -67px !important;
+position: absolute !important;
+font-size: 17px;
+  }
+  
+  #Blog .fa .next, .fa .prev :hover {
+    transform: scale(1.09) !important;
+  }
+#Blog #fa-icon-right{
+  display: inline-flex;
+margin-left: 325px !important;
+font-weight: 100;
+width: 2%;
+margin-top: -67px !important;
+position: absolute;
+font-size: 17px;
+}
+ #Blog .mySlides1 {
+  margin-left: 12px;
+height: 380px;
+text-align: left !important;
+width: 100%;
+box-shadow: 0 10px 10px -5px gray;
+padding-bottom: 0px !important;
+margin-bottom: 50px;
+} 
+
+  .arrows{
+      height: 0px;
+    display: block !important;
+  }
+  .slideshow-container1 {
+    position: relative;
+    display: block !important;
+  
+  }
+
+  
+  /* Next & previous buttons */
+  .fa .prev, .fa .next {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+#Blog img {
+  margin-top: 0px !important;
+  height: 55% !important;
+  width: 93.5% !important;
+  margin-left: 0px;
+  position: absolute;
+} 
+#Blog .mySlides1 p{
+  margin-top: 270px !important;
+font-size: 11px !important;
+position: relative;
+left: 5px !important;
+width: 74% !important;
+top: -67px;
+  } 
+  #Blog span {
+    padding-right: 27px;
+padding-left: 10px;
+font-size: 11px;
+font-weight: bolder;
+padding-top: 0;
+position: relative;
+margin-bottom: 0 !important;
+top: 205px !important;
+  }
+  #Blog h6 {
+    font-weight: bold;
+padding-top: 0px;
+padding-left: 6px;
+font-size: 14px;
+position: relative;
+top: 198px;
+left: 4px;
+  }
+ 
+  #Blog .continue {
+    background: #4F75FF;
+    border: none;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    margin-right: 0;
+    top: -75px;
+    position: relative;
+    padding: 8px;
+    width: 20% !important;
+    margin-left: 10px;
+  }
+
+#Review h1 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold !important;
+    line-height: 0px;
+    text-align: left;
+  }
+  #Review #fa-icon-left{
+    display: inline-flex !important;
+margin-left: 295px !important;
+font-weight: 100;
+width: 3% !important;
+margin-top: -67px !important;
+position: absolute !important;
+font-size: 17px;
+  }
+  
+  #Review .fa .next, .fa .prev :hover {
+    transform: scale(1.09) !important;
+  }
+  #Review #fa-icon-right{
+  display: inline-flex;
+margin-left: 310px !important;
+font-weight: 100;
+width: 2%;
+margin-top: -67px !important;
+position: absolute;
+font-size: 17px;
+}
+#Review .mySlides2 {
+  margin-left: 0px;
+height: 250px;
+text-align: left !important;
+width: 58%;
+box-shadow: 0 10px 10px -5px gray;
+padding-bottom: 0px !important;
+margin-bottom: 50px;
+text-align: left;
+} 
+
+  
+  .slideshow-container2 {
+    position: relative;
+    display: block !important;
+    }
+
+    
+    /* .fa .prev, .fa .next {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  } */
+#Review .mySlides2 p {
+  width: 85%;
+  position: relative;
+  top: 30px;
+  padding-right: 0;
+  font-size: 14px;
+  padding-left: 47px;
+
+}
+#Review .mySlides2 h6 {
+  font-size: 15px;
+font-weight: bold !important;
+margin-left: 105px;
+margin-top: 195px;
+position: inherit;
+width: 110px;
+}
+#Review .w3-image {
+  border-radius: 50% !important;
+  margin-left: 26px;
+  padding-left: 15px !important;
+  margin-top: 37px !important;
+  position: relative !important;
+  padding-right: 15px !important;
+  height: 55px;
+}
+#Review .info {
+  margin-left: 0px;
+  margin-top: -10px;
+}
+#Review .info p {
+  font-size: 15px !important;
+margin-top: 183px !important;
+margin-left: 57px !important;
+width: 305px !important;
+}
+
+
+
+#main-footer h3 {
+  font-size: 17px;
+  text-align: center !important;
+  margin-left: 5px;
+}
+#main-footer h4 {
+  display: none !important;
+  margin-top: 30px !important;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#main-footer .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
+  margin-left: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#main-footer nav {
+  width: 100% !important;
+  float: right;
+  text-align: right;
+}
+  #main-footer nav ul { 
+    display: none !important;
+   }
+  #main-footer nav select { 
+    display: inline-block !important; 
+    background: #4F75FF;
+border: none;
+color: white;
+width: 59%;
+  }
+  #main-footer nav label {
+    font-size: 15px !important;
+    line-height: 30px;
+    font-weight: bold !important;
+    font-family: Poppins;
+    color: white;
+    float: left !important;
+  display:block !important;
+}
+  #main-footer input {
+    width: 95% !important;
+    padding: 13px 15px 10px 5px;
+    position: absolute;
+    font-size: 9px;
+  }
+  #main-footer form a {
+    float: right;
+    padding-right: 0;
+    margin-right: -2px;
+  }
+  .social {
+    margin-top: 10px;
+    float: center;
+    text-align: center;
+    margin-left: 8px;
+  }
+  #main-footer p {
+    font-size: 10px;
+  }
+  .w3-container, .w3-panel {
+    padding: 0px 0px 5.01em 16px;
+    margin-top: 35px;
+  }
+  .contact {
+    width: 35%;
+    float: left;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .contact h1 {
+    font-size: 15px;
+  }
+  .contact span {
+    font-size: 7px;
+    line-height: 0;
+  }
+  .contact #email, .contact #fname {
+    padding: 4px 2px 4px 4px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 5px 0;
+  }
+  .contact textarea {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 9px 0;
+    padding: 0 0px 0 6px;
+    height: 95px !important;
+  }
+  .ct-btn {
+    background: rgb(79, 117, 255);
+    text-align: center;
+    margin: 0px 0px 0px 50px;
+    color: white;
+    padding: 6px 10px 6px 10px;
+    border: none;
+    font-size: 11px;
+  }
+  .phone {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 2px;
+  }
+  .mail {
+    margin-left: 0px;
+  }
+  .location {
+    float: left;
+    margin-top: 0px;
+    width: 180px;
+    margin-left: 1px;
+  }
+  
+}
+
+.arrows{
+  display: none;
+}
+
+.slideshow-container{
+  display:none;
+}
+.slideshow-container1{
+  display: none;
+}
+.slideshow-container2{
+  display: none;
+}
+#main-footer nav label {display: none;}
+nav select {display:none;}
+@media screen and (max-width: 360px) {
+#navbar {
+  text-transform: uppercase;
+  background: white !important;
+}
+
+  #navbar ul {
+    padding-left: 0;
+  }
+   #navbar a {
+    font-size: 11px;
+  }
+  .row.center-xs.center-sm.center-md.center-lg{
+    display: flex;
+    flex-direction: column-reverse;
   } 
   #cloud img {
     width: 100%;
     height: 100%;
   }
+  #cloud .col-xs-12.col-sm-12.col-md-4.col-lg-5 {
+    float: left !important;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #cloud .col-xs-12.col-sm-12.col-md-5.col-lg-5 {
+    flex: 8px;
+    width: 100%;
+    float: right !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+  }
   
   #cloud h4 {
-    text-align: center !important;
+    text-align: left !important;
     width: 100% !important;
     font-size: 17px !important;
+    margin-top: 0px !important;
   }
   #cloud h1 {
-    font-size: 16px !important;
-    line-height: 20px !important;
-    width: 55% !important;
-    text-align: center !important;
-    margin-left: 75px !important;
+    font-size: 19px !important;
+    line-height: 25px !important;
+    width: 75% !important;
+    text-align: left !important;
+    margin-left: 0;
     margin-top: 5px !important;
+    font-weight: 700 !important;
   }
   #cloud p {
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 100%;
-    float: center;
-    text-align: center;
+    float: left !important;
+    text-align: left;
+    margin-left: 0;
+    padding: 0 0 0 0px;
   }
   #cloud input {
     padding: 10px 0 10px 5px !important;
     width: 100% !important;
     font-size: 9px !important;
     margin-left: 0px;
+    border-right: none !important;
+    border: 1px solid rgb(79, 117, 255) !important;
   }
-
   .cld-btn {
     padding: 11px 5px 10px 5px !important;
     font-size: 9px !important;
     position: absolute;
     float: right;
-    margin-top: 82px !important;
-    margin-left: -38px !important;
+    margin-top: 75px !important;
+    margin-left: -36px !important;
   }
   #Services h1 {
     font-size: 15px!important;
